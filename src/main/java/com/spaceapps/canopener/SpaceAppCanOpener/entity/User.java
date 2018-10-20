@@ -14,11 +14,11 @@ import javax.validation.constraints.Size;
 
 
 @Entity
-@Table(name = "user_tbl")
+@Table(name = "users_tbl")
 public class User {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @NotNull

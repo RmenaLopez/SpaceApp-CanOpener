@@ -11,10 +11,5 @@ spring:
     database: sql_server
 
     hibernate:
-      ddl-auto: none
+      ddl-auto: create-drop
 
-  liquibase:
-    enabled: true
-    change-log: classpath:db/liquibase-changelog.xml
-    user: "sa"
-    password: "Sup3r-S3cr3t"

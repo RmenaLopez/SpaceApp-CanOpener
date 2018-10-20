@@ -1,7 +1,6 @@
 spring:
-
   datasource:
-    url: jdbc:sqlserver://localhost;databaseName=master
+    url: jdbc:sqlserver://localhost;databaseName=canopener
     username: "sa"
     password: "Sup3r-S3cr3t"
     driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
@@ -11,6 +10,6 @@ spring:
     database-platform: org.hibernate.dialect.SQLServer2012Dialect
     database: sql_server
 
-
     hibernate:
       ddl-auto: create-drop
+
