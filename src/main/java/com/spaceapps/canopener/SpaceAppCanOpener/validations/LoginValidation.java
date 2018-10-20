@@ -16,10 +16,9 @@ public class LoginValidation {
         this.userRepository = userRepository;
     }
 
-    public boolean isPasswordValid(User userRequest){
+    public boolean areValidCredentials(User userRequest){
 
         User user = userRepository.getByEmail(userRequest.getEmail());
-
         return user.equals(userRequest);
     }
 }
