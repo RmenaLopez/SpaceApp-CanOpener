@@ -10,4 +10,5 @@ To run the service:
 - compile project, on project source dir:
   * mvn clean install
   
-- start project, 
+- start project, on project source dir:
+  * java -jar target/SpaceApp-CanOpener-0.0.1-SNAPSHOT.jar
