@@ -10,7 +10,7 @@ FROM ubuntu:16.04
 EXPOSE 1433
 
 # Copy all SQL Server runtime files from build drop into image.
-COPY . ./install
+COPY . .
 
 # Run SQL Server process.
-CMD [ "/opt/mssql/bin/sqlservr" ]
+CMD [ "/opt/mssql/bin/sqlservr\" ]
