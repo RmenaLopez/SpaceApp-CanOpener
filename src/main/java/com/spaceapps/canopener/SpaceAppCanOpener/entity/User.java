@@ -45,7 +45,6 @@ public class User {
     private List<ListsContainerEntity> containers = new ArrayList<>();
 
     public User() {
-        containers.add(new ListsContainerEntity());
     }
 
     public Long getId() {
