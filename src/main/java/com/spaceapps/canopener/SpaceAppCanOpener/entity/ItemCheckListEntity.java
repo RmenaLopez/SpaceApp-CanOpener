@@ -26,6 +26,10 @@ public class ItemCheckListEntity {
     @Column(name = "name", unique = true)
     private String name;
 
+    @NotNull
+    @Column(name = "user_email")
+    private String userEmail;
+
     @OneToMany(
             cascade = CascadeType.ALL,
             orphanRemoval = true
@@ -54,5 +58,13 @@ public class ItemCheckListEntity {
 
     public void setItems(List<ItemEntity> items) {
         this.items = items;
+    }
+
+    public String getUserEmail() {
+        return userEmail;
+    }
+
+    public void setUserEmail(String userEmail) {
+        this.userEmail = userEmail;
     }
 }
