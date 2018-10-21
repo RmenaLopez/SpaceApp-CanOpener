@@ -13,7 +13,7 @@ public class NaturalDisasterListEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private int id;
+    private Long id;
 
     @Column(name = "disaster_name", nullable = false, updatable = false, unique = true)
     private String disasterName;
@@ -21,7 +21,7 @@ public class NaturalDisasterListEntity {
     public NaturalDisasterListEntity() {
     }
 
-    public int getId() {
+    public Long getId() {
         return id;
     }
 
