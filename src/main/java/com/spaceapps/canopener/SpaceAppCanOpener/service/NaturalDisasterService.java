@@ -2,6 +2,8 @@ package com.spaceapps.canopener.SpaceAppCanOpener.service;
 
 import java.util.List;
 
+import javax.transaction.Transactional;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -9,6 +11,7 @@ import com.spaceapps.canopener.SpaceAppCanOpener.entity.NaturalDisasterListEntit
 import com.spaceapps.canopener.SpaceAppCanOpener.repository.NaturalDisasterRepository;
 
 @Service
+@Transactional
 public class NaturalDisasterService {
 
     private NaturalDisasterRepository naturalDisasterRepository;

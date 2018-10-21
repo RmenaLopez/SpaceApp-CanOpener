@@ -1,12 +1,19 @@
 package com.spaceapps.canopener.SpaceAppCanOpener.entity;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 import javax.validation.constraints.NotNull;
@@ -28,6 +35,14 @@ public class User {
     @NotNull
     @Size(min = 8, message = "Password must be at least 8 characters long.")
     private String password;
+
+    @NotNull
+    @OneToMany(
+            cascade = CascadeType.ALL,
+            orphanRemoval = true
+    )
+    @JoinColumn(name = "container_id")
+    private List<ListsContainerEntity> containers = new ArrayList<>();
 
     public User() {
     }

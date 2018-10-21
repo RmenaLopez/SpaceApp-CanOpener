@@ -6,11 +6,13 @@ import java.util.List;
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
 
@@ -36,6 +38,10 @@ public class ActionCheckListEntity {
     )
     @JoinColumn(name = "action_id")
     private List<ActionEntity> actions = new ArrayList<>();
+
+    @OneToOne(fetch = FetchType.LAZY, optional = false)
+    @JoinColumn(name = "container_id", nullable = false)
+    private ListsContainerEntity container;
 
     public ActionCheckListEntity() {
     }
@@ -66,5 +72,13 @@ public class ActionCheckListEntity {
 
     public void setUserEmail(String userEmail) {
         this.userEmail = userEmail;
+    }
+
+    public ListsContainerEntity getContainer() {
+        return container;
+    }
+
+    public void setContainer(ListsContainerEntity container) {
+        this.container = container;
     }
 }
