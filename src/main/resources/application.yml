@@ -13,5 +13,5 @@ spring:
     database: sql_server
 
     hibernate:
-      ddl-auto: create-drop
+      ddl-auto: create
 
