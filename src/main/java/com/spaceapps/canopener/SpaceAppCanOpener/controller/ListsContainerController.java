@@ -29,8 +29,6 @@ public class ListsContainerController {
     @PostMapping(LISTS_CONTAINER_URL)
     public ListsContainerEntity createContainer(@RequestBody ListsContainerEntity listsContainerEntity,
                                                 HttpServletResponse response){
-        listsContainerEntity.getItemCheckLis().setContainer(listsContainerEntity);
-        listsContainerEntity.getActionCheckLis().setContainer(listsContainerEntity);
         ListsContainerEntity res = listsContainerService.createContainer(listsContainerEntity);
         response.setStatus(HttpStatus.CREATED.value());
         return res;

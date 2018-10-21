@@ -13,6 +13,7 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
+import javax.persistence.PrimaryKeyJoinColumn;
 import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
 
@@ -39,8 +40,8 @@ public class ItemCheckListEntity {
     @JoinColumn(name = "item_id")
     private List<ItemEntity> items = new ArrayList<>();
 
-    @OneToOne(fetch = FetchType.LAZY, optional = false)
-    @JoinColumn(name = "container_id", nullable = false)
+    @OneToOne
+    @PrimaryKeyJoinColumn
     private ListsContainerEntity container;
 
     public ItemCheckListEntity() {
