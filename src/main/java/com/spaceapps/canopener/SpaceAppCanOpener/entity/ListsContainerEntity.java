@@ -26,10 +26,10 @@ public class ListsContainerEntity {
     @Column(name = "disaster_name")
     private String disasterName;
 
-    @OneToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL, mappedBy = "container")
+    @OneToOne(cascade = CascadeType.ALL)
     private ItemCheckListEntity itemCheckLis;
 
-    @OneToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL, mappedBy = "container")
+    @OneToOne(cascade = CascadeType.ALL)
     private ActionCheckListEntity actionCheckLis;
 
     public ListsContainerEntity() {
