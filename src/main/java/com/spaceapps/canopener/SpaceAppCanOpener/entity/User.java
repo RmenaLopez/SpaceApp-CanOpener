@@ -36,14 +36,6 @@ public class User {
     @Size(min = 8, message = "Password must be at least 8 characters long.")
     private String password;
 
-    @NotNull
-    @OneToMany(
-            cascade = CascadeType.ALL,
-            orphanRemoval = true
-    )
-    @JoinColumn(name = "container_id")
-    private List<ListsContainerEntity> containers = new ArrayList<>();
-
     public User() {
     }
 
