@@ -3,7 +3,9 @@ version: '3'
 services:
   mssql:
     image: microsoft/mssql-server-linux:2017-latest
-    build: .
+    build:
+      context: .
+      dockerfile: Dockerfile
     container_name: mssql-CanOpener
     ports:
       - "1433:1433"

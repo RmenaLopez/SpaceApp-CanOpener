@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df6aa75b-396a-42ad-8ab7-09344cb92954" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spaceapps/canopener/SpaceAppCanOpener/controller/ItemCheckListController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spaceapps/canopener/SpaceAppCanOpener/controller/ItemCheckListController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spaceapps/canopener/SpaceAppCanOpener/entity/ItemEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spaceapps/canopener/SpaceAppCanOpener/entity/ItemEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spaceapps/canopener/SpaceAppCanOpener/repository/ItemCheckListRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spaceapps/canopener/SpaceAppCanOpener/repository/ItemCheckListRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -474,7 +472,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18458000" />
+    <option name="totallyTimeSpent" value="18898000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1440" y="23" width="1920" height="1057" extended-state="6" />
