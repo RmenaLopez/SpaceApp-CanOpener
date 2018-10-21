@@ -14,7 +14,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.spaceapps.canopener.SpaceAppCanOpener.entity.ItemCheckListEntity;
 import com.spaceapps.canopener.SpaceAppCanOpener.service.ItemCheckListService;
-import com.sun.deploy.net.HttpResponse;
 
 @RestController
 public class ItemCheckListController {

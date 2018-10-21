@@ -18,6 +18,9 @@ public class ItemEntity {
     @Column(name = "item_name")
     private String itemName;
 
+    @Column(name = "is_cheked")
+    private boolean isChecked = false;
+
     public ItemEntity() {
     }
 
@@ -31,5 +34,13 @@ public class ItemEntity {
 
     public void setItemName(String itemName) {
         this.itemName = itemName;
+    }
+
+    public boolean isChecked() {
+        return isChecked;
+    }
+
+    public void setChecked(boolean checked) {
+        isChecked = checked;
     }
 }
