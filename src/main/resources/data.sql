@@ -1,3 +1,4 @@
+-- data.sql
 INSERT INTO natural_disasters_record (disaster_name) VALUES ('Flood');
 INSERT INTO natural_disasters_record (disaster_name) VALUES ('Comet');
 INSERT INTO natural_disasters_record (disaster_name) VALUES ('Earthquake');

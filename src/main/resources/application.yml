@@ -4,6 +4,8 @@ spring:
     username: "sa"
     password: "Sup3r-S3cr3t"
     driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    initialization-mode: always
+
 
   jpa:
     show-sql: true
